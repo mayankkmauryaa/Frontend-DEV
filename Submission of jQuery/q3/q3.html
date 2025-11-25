@@ -1,0 +1,72 @@
+<!-- q3.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Q3 - Interactive FAQ</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="q3.js"></script>
+        <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .faq { max-width: 800px; }
+    .question { padding: 12px; border-bottom: 1px solid #ddd; cursor: pointer; }
+    .question:hover { background: #f3f3f3; }
+    .answer { display: none; padding: 8px 12px; background: #fafafa; }
+    .highlight { background: #fff3d6 !important; }
+  </style>
+    </head>
+    <body>
+        <main class="faq">
+            <h1>FAQ (Q3)</h1>
+
+            <article class="qa">
+                <h3 class="question" tabindex="0">What is the return
+                    policy?</h3>
+                <div class="answer">
+                    <p>Items can be returned within 30 days with a receipt.</p>
+                    <input type="text" class="answer-input"
+                        placeholder="Add a note..." />
+                </div>
+            </article>
+
+            <article class="qa">
+                <h3 class="question" tabindex="0">How long is shipping?</h3>
+                <div class="answer">
+                    <p>Shipping typically takes 3–7 business days.</p>
+                    <input type="text" class="answer-input"
+                        placeholder="Ask a follow-up..." />
+                </div>
+            </article>
+
+            <article class="qa">
+                <h3 class="question" tabindex="0">Do you ship
+                    internationally?</h3>
+                <div class="answer">
+                    <p>Yes — we ship to selected countries. Contact support for
+                        details.</p>
+                    <input type="text" class="answer-input"
+                        placeholder="Country question..." />
+                </div>
+            </article>
+
+            <article class="qa">
+                <h3 class="question" tabindex="0">Payment methods?</h3>
+                <div class="answer">
+                    <p>We accept cards, UPI and net banking.</p>
+                    <input type="text" class="answer-input"
+                        placeholder="Payment query..." />
+                </div>
+            </article>
+
+            <article class="qa">
+                <h3 class="question" tabindex="0">How to track my order?</h3>
+                <div class="answer">
+                    <p>Use order ID on the tracking page or contact support.</p>
+                    <input type="text" class="answer-input"
+                        placeholder="Enter order ID..." />
+                </div>
+            </article>
+        </main>
+    </body>
+</html>

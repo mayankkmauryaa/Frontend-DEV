@@ -1,0 +1,65 @@
+<!-- q2.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Q2 - Product Highlight</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="q2.js"></script>
+        <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    main { display: flex; gap: 12px; flex-wrap: wrap; }
+    .product { border: 1px solid #ccc; padding: 12px; width: 180px; position: relative; }
+    .product.highlight { background: #fff7cc; }
+    .favorite.selected { color: red; font-weight: bold; }
+    .details { display: none; margin-top: 8px; font-size: 0.9rem; }
+    .out-of-stock { color: #d00; font-weight: bold; }
+    .discounted { border-color: #2a7ae2; }
+  </style>
+    </head>
+    <body>
+        <header><h1>Products (Q2)</h1></header>
+        <main id="products" aria-label="product list">
+            <!-- Each product uses data attributes -->
+            <article class="product" data-stock="5" data-id="p1"
+                data-discount="20">
+                <h3 class="title">Running Shoes</h3>
+                <p class="price">₹2,499</p>
+                <button class="favorite">♥ Favorite</button>
+                <p class="details">Comfort fit, breathable.</p>
+            </article>
+
+            <article class="product" data-stock="0" data-id="p2">
+                <h3 class="title">Yoga Mat</h3>
+                <p class="price">₹799</p>
+                <button class="favorite">♥ Favorite</button>
+                <p class="details">Non-slip, eco-friendly.</p>
+                <p class="out-of-stock">Out of stock</p>
+            </article>
+
+            <article class="product" data-stock="3" data-id="p3"
+                data-discount="10">
+                <h3 class="title">Fitness Band</h3>
+                <p class="price">₹1,999</p>
+                <button class="favorite">♥ Favorite</button>
+                <p class="details">Heart-rate monitoring.</p>
+            </article>
+
+            <article class="product" data-stock="12" data-id="p4">
+                <h3 class="title">Water Bottle</h3>
+                <p class="price">₹299</p>
+                <button class="favorite">♥ Favorite</button>
+                <p class="details">Stainless steel, 1L.</p>
+            </article>
+
+            <article class="product" data-stock="2" data-id="p5"
+                data-discount="50">
+                <h3 class="title">Gym Bag</h3>
+                <p class="price">₹1,199</p>
+                <button class="favorite">♥ Favorite</button>
+                <p class="details">Multiple compartments.</p>
+            </article>
+        </main>
+    </body>
+</html>

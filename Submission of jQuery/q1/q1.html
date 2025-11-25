@@ -1,0 +1,51 @@
+<!-- q1.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Q1 - Welcome Greeting</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="q1.js"></script>
+        <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    header, main, footer { margin-bottom: 16px; }
+    .welcome { font-size: 1.6rem; margin: 8px 0; cursor: pointer; }
+    .hidden { display: none; }
+    .quote { color: #2a7ae2; font-style: italic; }
+  </style>
+    </head>
+    <body>
+        <header>
+            <h1>Welcome Page (Q1)</h1>
+        </header>
+
+        <main>
+            <section id="greeting-section" aria-labelledby="greet-heading">
+                <h2 id="greet-heading">Visitor Greeting</h2>
+                <p class="welcome" id="greeting">Hello!</p>
+                <p id="welcomeMsg">We're glad you visited. Enjoy exploring our
+                    site!</p>
+                <nav>
+                    <button id="changeGreeting">Change Greeting</button>
+                    <button id="toggleWelcome">Toggle Welcome Message</button>
+                </nav>
+            </section>
+
+            <section>
+                <h3>Other elements (to reach 5 items)</h3>
+                <ul>
+                    <li>Feature A</li>
+                    <li>Feature B</li>
+                    <li>Feature C</li>
+                    <li>Feature D</li>
+                    <li>Feature E</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer>
+            <small>© Example</small>
+        </footer>
+    </body>
+</html>

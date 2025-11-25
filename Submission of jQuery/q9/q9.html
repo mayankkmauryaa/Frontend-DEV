@@ -1,0 +1,57 @@
+<!-- q9.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Q9 - Multi jQuery Widgets</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <!-- Load older jQuery first (version 1) -->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+        <script>
+    // Assign the old jQuery to a unique var and remove global $/jQuery
+    var jQuery1 = jQuery.noConflict(true);
+    window.jQuery1 = jQuery1; // make accessible to q9.js
+  </script>
+
+        <!-- Load newer jQuery (version 3) -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+    var jQuery2 = jQuery.noConflict(true);
+    window.jQuery2 = jQuery2;
+  </script>
+
+        <script src="q9.js"></script>
+
+        <style>
+    .carousel { width:300px; height:150px; border:1px solid #ccc; overflow:hidden; position:relative; }
+    .slide { display:none; padding:20px; text-align:center; font-size:1.2rem; }
+    .active { display:block; background:#f0f8ff; }
+    .widget { padding:8px; border:1px solid #eee; margin-top:8px; }
+    .tooltip { position:absolute; background:#333; color:#fff; padding:6px; border-radius:4px; display:none; }
+  </style>
+    </head>
+    <body>
+        <main>
+            <h1>Multi-jQuery Widgets (Q9)</h1>
+
+            <section id="carousel" class="carousel">
+                <div class="slide">Slide A</div>
+                <div class="slide">Slide B</div>
+                <div class="slide">Slide C</div>
+                <div class="slide">Slide D</div>
+                <div class="slide">Slide E</div>
+            </section>
+
+            <section id="widgets">
+                <div class="widget" data-widget="w1">Widget 1 (active
+                    highlight)</div>
+                <div class="widget" data-widget="w2">Widget 2</div>
+                <div class="widget" data-widget="w3">Widget 3</div>
+                <div class="widget" data-widget="w4">Widget 4</div>
+                <div class="widget" data-widget="w5">Widget 5</div>
+            </section>
+
+            <div class="tooltip" id="tooltip">Tooltip</div>
+        </main>
+    </body>
+</html>

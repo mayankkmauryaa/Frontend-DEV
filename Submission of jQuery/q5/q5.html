@@ -1,0 +1,48 @@
+<!-- q5.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Q5 - Team Directory</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="q5.js"></script>
+        <style>
+    .department { border: 1px solid #ddd; padding: 12px; margin-bottom: 12px; }
+    .member { padding: 6px; cursor: pointer; }
+    .highlight { background: #e6f7ff; }
+    .contact { display:none; font-size:0.9rem; color:#333; }
+  </style>
+    </head>
+    <body>
+        <main>
+            <h1>Team Directory (Q5)</h1>
+
+            <section class="department" data-dept="engineering">
+                <h2 class="dept-title">Engineering (Click to highlight
+                    members)</h2>
+                <div class="manager member" data-role="manager"
+                    data-id="m1">Alice (Manager)</div>
+                <div class="employee member" data-manager="m1">Bob</div>
+                <div class="employee member" data-manager="m1">Charlie</div>
+                <div class="employee member" data-manager="m1">Dana</div>
+                <div class="employee member" data-manager="m1">Eve</div>
+            </section>
+
+            <section class="department" data-dept="design">
+                <h2 class="dept-title">Design</h2>
+                <div class="manager member" data-role="manager"
+                    data-id="m2">Frank (Manager)</div>
+                <div class="employee member" data-manager="m2">Grace</div>
+                <div class="employee member" data-manager="m2">Heidi</div>
+                <div class="employee member" data-manager="m2">Ivan</div>
+                <div class="employee member" data-manager="m2">Judy</div>
+            </section>
+
+            <div>
+                <button id="randomEmployee">Select Random Employee</button>
+                <button id="collapseTeams">Collapse/Expand Teams</button>
+            </div>
+        </main>
+    </body>
+</html>

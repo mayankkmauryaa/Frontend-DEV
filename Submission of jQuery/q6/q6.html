@@ -1,0 +1,55 @@
+<!-- q6.html -->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Q6 - Subscription Panel</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="q6.js"></script>
+        <style>
+    .topic { margin: 6px 0; }
+    .subscribed { color: green; font-weight: bold; }
+    .message { margin-top: 12px; padding: 8px; border: 1px solid #cfc; background:#f7fff7; display:none; }
+  </style>
+    </head>
+    <body>
+        <main>
+            <h1>Event Subscriptions (Q6)</h1>
+            <div id="topics">
+                <div class="topic" data-topic="news">
+                    <span>News</span>
+                    <button class="subscribe">Subscribe</button>
+                    <button class="unsubscribe">Unsubscribe</button>
+                </div>
+                <div class="topic" data-topic="offers">
+                    <span>Offers</span>
+                    <button class="subscribe">Subscribe</button>
+                    <button class="unsubscribe">Unsubscribe</button>
+                </div>
+                <div class="topic" data-topic="updates">
+                    <span>Updates</span>
+                    <button class="subscribe">Subscribe</button>
+                    <button class="unsubscribe">Unsubscribe</button>
+                </div>
+                <div class="topic" data-topic="events">
+                    <span>Events</span>
+                    <button class="subscribe">Subscribe</button>
+                    <button class="unsubscribe">Unsubscribe</button>
+                </div>
+                <div class="topic" data-topic="jobs">
+                    <span>Jobs</span>
+                    <button class="subscribe">Subscribe</button>
+                    <button class="unsubscribe">Unsubscribe</button>
+                </div>
+            </div>
+
+            <div style="margin-top:10px;">
+                <input id="newTopic" placeholder="New topic name" />
+                <button id="addTopic">Add Topic</button>
+            </div>
+
+            <div id="messageArea" class="message" role="status"></div>
+        </main>
+    </body>
+</html>
